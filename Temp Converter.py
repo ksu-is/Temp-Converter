@@ -10,31 +10,32 @@ def convert_tem():
         temp = float(e1.get())
         e2.insert(0, round(9*temp/5+32,2))
         if float(e1.get())>28:
-            l4 = Label(window, text="Hot") 
+            l4 = Label(window, text="It is very hot! Make sure to bring water with you!") 
         elif 28>=float(e1.get())>18:
-            l4 = Label(window, text="Warm") 
+            l4 = Label(window, text="What a nice weather. Enjoy your day!") 
         elif 18>=float(e1.get())>8:
-            l4 = Label(window, text="Cool")
+            l4 = Label(window, text="It's cool outside! Keep yourself warm not to catch a cold")
         elif 8>float(e1.get()):
-            l4 = Label(window, text="Cold")
+            l4 = Label(window, text="Be prepared for cold weather. Wear a warm clothes")
         return l4.grid(row=4, columnspan=4)
     else:
         temp = float(e2.get())
         e1.insert(0, round((temp-32)*5/9,2))
         if float(e1.get())>28:
-            l4 = Label(window, text="Hot")
+            l4 = Label(window, text="It is very hot! Make sure to bring water with you!")
         elif 28>=float(e1.get())>18:
-            l4 = Label(window, text="Warm")
+            l4 = Label(window, text="What a nice weather. Enjoy your day!")
         elif 18>=float(e1.get())>8:
-            l4 = Label(window, text="Cool")
+            l4 = Label(window, text="It's cool outside! Keep yourself warm not to catch a cold")
         elif 8>float(e1.get()):
-            l4 = Label(window, text="Cold")
+            l4 = Label(window, text="Be prepared for cold weather. Wear a warm clothes")
         return l4.grid(row=4, columnspan=4)
 
 
 def clear():
     e1.delete(0, END)
     e2.delete(0, END)
+    
     
 
 
