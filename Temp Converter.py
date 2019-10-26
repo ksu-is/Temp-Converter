@@ -59,12 +59,3 @@ b2=Button(window, text="Clear", width=11, height=2, command=clear)
 b2.grid(row=3, column=3, columnspan=2)
 
 window.mainloop()
-
-'''
-def main():
-    convert_tem()
-    clear()
-
-if __name__ == "main":
-    main()
-'''
