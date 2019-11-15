@@ -15,6 +15,10 @@
 9. [Done] Create a Convert and Clear buttons and connect the functions (Kihyup)
     Outcome: With 7, 8, and 9 process, I have a good knowledge of GUI using tKinter and how to put command function to buttons.
 10. Review Final Codes and see if there is anything that I can improve (Kihyup)
+    Outcome: Should be able to decorate the GUI
 11. Create a PowerPoint presentation to introduce my app (Kihyup)
+    Outcome: Able to present my app to my audience
 12. Edit and review presentation (Kihyup)
+    Outcome: Can check if my presentation is well supported from the audience view point
 13. Submit all deliverables (Kihyup)
+    Outcome: Project is done!!
