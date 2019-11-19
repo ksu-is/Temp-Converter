@@ -21,13 +21,17 @@ def f_to_c():
 
 def message():
     if float(e1.get())>28:
-        l4 = Label(window, text="It is very hot! Make sure to bring water with you!") 
+        lbl.set("It is very hot! Make sure to bring water with you!")
+        l4 = Label(window, textvariable=lbl)  
     elif 28>=float(e1.get())>18:
-        l4 = Label(window, text="What a nice weather. Enjoy your day!") 
+        lbl.set("What a nice weather. Enjoy your day!") 
+        l4 = Label(window, textvariable=lbl)
     elif 18>=float(e1.get())>8:
-        l4 = Label(window, text="It's cool outside! Keep yourself warm not to catch a cold")
+        lbl.set("It's cool outside! Keep yourself warm not to catch a cold")
+        l4 = Label(window, textvariable=lbl)
     elif 8>float(e1.get()):
-        l4 = Label(window, text="Be prepared for cold weather. Wear a warm clothes")
+        lbl.set("Be prepared for cold weather. Wear a warm clothes")
+        l4 = Label(window, textvariable=lbl)
     return l4.grid(row=4, columnspan=4)
 
 def convert():
@@ -40,8 +44,11 @@ def convert():
 def clear():
     e1.delete(0, END)
     e2.delete(0, END)
+    lbl.set("")
+
     
 
+lbl = tkinter.StringVar()
 l1 = Label(window, text="C")
 l2 = Label(window, text="F")
 l3 = Label(window, height=1)
@@ -57,7 +64,7 @@ e2=Entry(window)
 e1.grid(row=1, column=0)
 e2.grid(row=1, column=3)
 
-b1=Button(window, text="Convet", width=11, height=2, command=convert)
+b1=Button(window, text="Convert", width=11, height=2, command=convert)
 b1.grid(row=3, columnspan=2)    
 b2=Button(window, text="Clear", width=11, height=2, command=clear)
 b2.grid(row=3, column=3, columnspan=2)
